@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#DAD3C8">
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="70dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logo01"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rectangle_1"
+        android:layout_width="410dp"
+        android:layout_height="340dp"
+        android:background="@drawable/border0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivlogo"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/xinchao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:hint="Xin Chào"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="-13sp"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/eduser"
+            android:layout_width="374dp"
+            android:layout_height="62dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/border1"
+            android:drawableLeft="@drawable/user1"
+            android:drawablePadding="8dp"
+            android:hint="Tài khoản"
+            android:padding="8dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/edpassword"
+            android:layout_width="374dp"
+            android:layout_height="62dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/border1"
+            android:drawableLeft="@drawable/key1"
+            android:drawablePadding="8dp"
+            android:hint="Mật khẩu"
+            android:padding="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="331dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="294dp"
+            android:gravity="top"
+            android:hint="Bạn chưa có tài khoản?"
+            android:lineSpacingExtra="3sp"
+            android:textStyle="bold"
+            android:transformPivotY="-1.56sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="148dp"
+            android:layout_height="56dp"
+            android:id="@+id/btLogin"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/border4"
+            app:backgroundTint="#D9D9D9"
+            android:gravity="center"
+            android:backgroundTint="@color/teal_200"
+            android:hint="Đăng nhập"
+            android:textStyle="bold">
+        </com.google.android.material.button.MaterialButton>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="285dp"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/border4"
+            android:gravity="center"
+            android:hint="Đăng kí"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="#2562442B"
+            >
+        </com.google.android.material.button.MaterialButton>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
